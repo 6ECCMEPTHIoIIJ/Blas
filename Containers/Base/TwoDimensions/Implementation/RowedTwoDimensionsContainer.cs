@@ -20,7 +20,7 @@ public class RowedTwoDimensionsContainer<T> :
 
     public Int32 NRows => _data.NElements;
     
-    public Int32 NColumns => NRows == 0 ? 0 : _data[0].NElements;
+    public Int32 NColumns => NRows == 0 ? 0 : _data.First.NElements;
 
     public Int32 RowIndexLast => NRows - 1;
 

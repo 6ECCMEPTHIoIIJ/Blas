@@ -7,9 +7,8 @@ public interface IColumnedMatrixBase<TRow, TColumn, T> :
     IColumnAccessor<TColumn, T>,
     IRowInserter<T>,
     IColumnInserter<T>,
-    IRowFormatter<T>,
-    IColumnFormatter<T>,
-    IEnumerable<TColumn>
+    ITwoDimensionFormatter<T>,
+    ITwoDimensionsContainer<T>
     where TColumn : IVectorBase<T>
     where TRow : IVectorBase<T>
 {

@@ -17,7 +17,7 @@ public class ColumnedTwoDimensionsContainer<T> :
 
     IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 
-    public Int32 NRows => NColumns == 0 ? 0 : _data[0].NElements;
+    public Int32 NRows => NColumns == 0 ? 0 :  _data.First.NElements;
     
     public Int32 NColumns => _data.NElements;
     
